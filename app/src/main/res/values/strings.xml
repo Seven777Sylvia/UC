@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">UChain Wallet</string>
+    <string name="create_wallet">Create Wallet</string>
+    <string name="import_wallet">Import Wallet</string>
+    <string name="security">• It is very important that the password is used to encrypt the private key and transaction authorization. Please do not set it too simple.\n\n• Apex Wallet does not store passwords and cannot retrieve them for you. Please keep in mind.</string>
+    <string name="wallet_name">Wallet Name</string>
+    <string name="password">Password (At Least 6 Characters)</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="i_have_read_terms">I Agree to the </string>
+    <string name="privacy_terms">Service and Privacy Policy</string>
+    <string name="confirm">Confirm</string>
+    <string name="asset">Assets</string>
+    <string name="search_wallet_address">Search Wallet Address</string>
+    <string name="cancel">Cancel</string>
+    <string name="wallet_address">Wallet Address</string>
+    <string name="transfer">Transfer</string>
+    <string name="receive">Receive</string>
+    <string name="from">From</string>
+    <string name="payer">Payer</string>
+    <string name="payee">Payee</string>
+    <string name="to">To</string>
+    <string name="send">Send</string>
+    <string name="transfer_amount">Amount</string>
+    <string name="me">Me</string>
+    <string name="manage_wallets">Manage Wallets</string>
+    <string name="transaction_records">Transaction Records</string>
+    <string name="your_wallet_and_address">Your wallet/address</string>
+    <string name="copy_payee_address">Copy wallet address</string>
+    <string name="backup_wallet">Backup Wallet</string>
+    <string name="backup_detail">Export mnemonics and keep it in a safe place, do not save on the internet. then start using and testing with small amount of assets</string>
+    <string name="copy_mnemonic">Copy Your Mnemonic</string>
+    <string name="copy_mnemonic_detail">The mnemonic is used to recover the wallet or repeat the wallet password, copy it to the paper accurately, and store it in a safe place that only you know.</string>
+    <string name="next_step">Next</string>
+    <string name="copy_mnemonic_attention">Do not take screenshots,  someone will have fully accecss to your assets ,if it gets your mnemonic! Please copy the mnemonic, then store it at a safe place.</string>
+    <string name="confirm_mnemonic">Confirm your mnemonic</string>
+    <string name="confirm_mnemonic_content">Please click on the mnemonic, make sure that you backup correctly.</string>
+    <string name="please_backup">Please Backup</string>
+    <string name="backup_mnemonic">Backup Mnemonic</string>
+    <string name="delete_wallet">Delete wallet</string>
+    <string name="search_tx_id">Search The Transaction Number</string>
+    <string name="input_pwd">Please input your password</string>
+    <string name="be_careful">Attention! Delete Wallet Can Not Be Revoked</string>
+    <string name="confirm_pwd">Confirm</string>
+    <string name="pwd_hint">Password</string>
+    <string name="mnemonic">Mnemonics</string>
+    <string name="keystore">Keystore</string>
+    <string name="keystore_notice">Input Keystore Text Here</string>
+    <string name="keystore_content">Keystore text content</string>
+    <string name="keystore_note">Please store the Keystore to a safe offline location or device such as a USB drive. Never store or upload it to the internet.</string>
+    <string name="keystore_offline_save">Store Offline</string>
+    <string name="transfer_no_net">Don\'t Transfer via internet Tools</string>
+    <string name="keystore_transfer_no_net">Don\'t use Email/Cloud Storage/Notepad/IM tools to transfer Keystore . It easily gets hacked and result in loss.</string>
+    <string name="strongbox_save">Store to Password Vault</string>
+    <string name="online_save">If you like to store online please make sure to use password vault apps , like 1Password.</string>
+    <string name="export_keystore">Export keystore</string>
+    <string name="copy_keystore">Copy keystore</string>
+    <string name="transaction_detail">Transaction Details</string>
+    <string name="search_asset">Search asset</string>
+    <string name="save">Save</string>
+    <string name="mnemonic_separated_by_spaces">Mnemonic words, separated by Spaces</string>
+    <string name="start_import">Import</string>
+    <string name="keystore_pwd">Keystore password</string>
+    <string name="scan">scan</string>
+    <string name="tx_failed">failed</string>
+    <string name="tx_successful">successful</string>
+    <string name="tx_confirming">confirming</string>
+    <string name="tx_blocking">blocking</string>
+    <string name="wallet_from">From</string>
+    <string name="wallet_to">To</string>
+    <string name="transaction_time">Transaction Time</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="a_key_mapping">Pre-Mainnet</string>
+    <string name="add_assets">Add Assets</string>
+    <string name="portrait_empty_content">Please create wallet\nthat we could distribute our rewards.</string>
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="day">day</string>
+    <string name="example_address">Example：China ShangHai</string>
+    <string name="place_of_residence">Place Of Residence</string>
+    <string name="enterprise_key">Enterprise Key</string>
+    <string name="to_dht_cloud">Saving Data To DHT Cloud</string>
+    <string name="available_amount">Amount (Available: </string>
+    <string name="amount_all">All</string>
+    <string name="dialog_amount">Amount : </string>
+    <string name="change_wallet">Change Wallet</string>
+    <string name="choose_wallet">Choose Wallet</string>
+    <string name="data_empty">Data Empty</string>
+    <string name="empty_wallet">Please Click The Upper Right Corner\nTo Have Your Wallet</string>
+    <string name="wallet_type">Wallet Type</string>
+    <string name="seek_bar_slow">Slow</string>
+    <string name="seek_bar_fast">Fast</string>
+    <string name="excitation">Reward</string>
+    <string name="latest_activity">Latest Activity</string>
+    <string name="current_gas_price">Last Gas Price:</string>
+    <string name="gas_fee">Gas Fee ≈</string>
+    <string name="gas_consumed">Gas Used</string>
+    <string name="gas_price">Gas Price</string>
+    <string name="gas_total_fee">Gas Fee</string>
+
+
+    <!--Me页面，功能菜单文字-->
+    <string name="personal_portrait">Profile</string>
+    <string name="language_settings">Language</string>
+    <string name="about_us">About Us</string>
+
+    <!--Toast content-->
+    <string name="address_cannot_be_empty">The address cannot be empty</string>
+    <string name="address_cannot_be_same">Payment address cannot be the same</string>
+    <string name="wallet_name_save_success">Wallet name saved successfully</string>
+    <string name="payment_address_copied">payment address has copied</string>
+    <string name="payee_address_copied">payee address has copied</string>
+    <string name="tx_id_copied">transaction id has copied</string>
+    <string name="wallet_address_copied">wallet address copy successful</string>
+    <string name="transaction_broadcast_successful">Transaction broadcast successful</string>
+    <string name="transaction_broadcast_failed">Transaction broadcast failed</string>
+    <string name="transaction_creation_failed">Transaction creation failed, please verify the input parameters!</string>
+    <string name="db_exception">Database exception!</string>
+    <string name="wallet_copied_share">Copy success, you can send it to friends</string>
+    <string name="insufficient_balance">Insufficient balance</string>
+    <string name="illegal_input">Illegal input</string>
+    <string name="generate_utxo_failed">Generate UTXO Failed, Please Check Network Status</string>
+    <string name="pwd_must_not_be_less_than_6_bits">Password must not be less than 6 bits</string>
+    <string name="wallet_name_can_not_be_empty">Wallet name can not be empty</string>
+    <string name="pwd_can_not_be_empty">Password can not be empty</string>
+    <string name="inconsistent_password">Passwords do not match</string>
+    <string name="read_privacy_policy_first">Please read the privacy policy carefully first</string>
+    <string name="keystore_import_failed">The Keystore import failed</string>
+    <string name="mnemonic_import_failed">Mnemonic import failed</string>
+    <string name="wallet_exist">Wallet Exist</string>
+    <string name="keystore_copied">The keystore has been copied to the clipboard</string>
+    <string name="mnemonic_incorrect">The mnemonic is incorrect</string>
+    <string name="password_incorrect">Password Incorrect!</string>
+    <string name="select_wallet_type">Please Select The Wallet Type!</string>
+    <string name="keystore_can_not_be_empty">Keystore can not be empty</string>
+    <string name="mnemonic_can_not_be_empty">Mnemonic can not be empty</string>
+    <string name="select_correct_import_type">Select the correct import type!</string>
+    <string name="server_err_txId_null">Server error! TxId is null!</string>
+    <string name="eth_nonce_null">Nonce query failed, please check the network!</string>
+    <string name="eth_data_null">Transaction data generation failed!</string>
+    <string name="no_this_type_asset">No asset of this type!</string>
+    <string name="insufficient_gas">Insufficient gas</string>
+    <string name="has_blocking_tx">There is still a transaction in Blocking, Please wait a moment</string>
+    <string name="illegal_address">Please enter the correct wallet address</string>
+
+    <!--语言-->
+    <string name="language_zh_cn">简体中文</string>
+    <string name="language_en_US">English(U.S)</string>
+
+    <!--画像类型-->
+    <string name="portrait_type_common">Basic</string>
+    <string name="portrait_type_enterprise">Enterprise</string>
+
+    <!--钱包类型-->
+    <string name="create_wallet_type_neo" translatable="false">NEO</string>
+    <string name="create_wallet_type_eth" translatable="false">ETH</string>
+
+
+    <!--激励界面-->
+    <string name="excitation_new_activity">New</string>
+    <string name="excitation_about_to_begin">About to begin</string>
+    <string name="excitation_in_progress">In progress</string>
+    <string name="excitation_closed">Closed</string>
+    <string name="excitation_detail_cpx_address">CPX Address (achieved T2/T1/ Genesis level)</string>
+    <string name="excitation_detail_wrong_address_note">Please enter the correct wallet address</string>
+    <string name="excitation_detail_eth_address">ETH Address</string>
+    <string name="excitation_detail_submit">Submit</string>
+    <string name="excitation_detail_condition_chinese_tip_part_one">Please be sure you have local NEO wallet, and the total amount of CPX should be equal or more than </string>
+    <string name="excitation_detail_condition_chinese_tip_part_two">""</string>
+    <string name="excitation_detail_copyright">The final interpretation of this activity belongs to APEX TECHNOLOGIES</string>
+    <string name="excitation_detail_save_successfully">Save successfully</string>
+    <string name="excitation_save_ok">Submitted successfully</string>
+    <string name="excitation_save_repeat">This address has already participated please do not submit again</string>
+    <string name="excitation_format_err">Please enter the correct wallet address. </string>
+    <string name="excitation_save_fail">Server error, storage failed</string>
+    <string name="server_request_failed">Server request failed</string>
+    <string name="excitation_detail_sum_dialog_note">Please be sure the amount of CPX in the local wallets more than </string>
+    <string name="excitation_detail_sum_dialog_confirm">Confirm</string>
+    <string name="excitation_about_to_begin_toast">The reward is about to begin. Please look forward to it!</string>
+    <string name="excitation_closed_toast">The reward is closed</string>
+    <string name="excitation_cpx_address_wrong_format_toast">Please input the correct format CPX address!</string>
+    <string name="excitation_cpx_address_empty_toast">CPX address can not be empty!</string>
+    <string name="excitation_eth_address_wrong_format_toast">Please input the correct format ETH address!</string>
+    <string name="excitation_eth_address_empty_toast">ETH address can not be empty!</string>
+
+    <!--资产界面-->
+    <string name="assets_wallet_icon_resource_name_1" translatable="false">R.drawable.icon_assets_item_1</string>
+    <string name="assets_wallet_icon_resource_name_2" translatable="false">R.drawable.icon_assets_item_2</string>
+    <string name="assets_wallet_icon_resource_name_3" translatable="false">R.drawable.icon_assets_item_3</string>
+    <string name="assets_wallet_icon_resource_name_4" translatable="false">R.drawable.icon_assets_item_4</string>
+    <string name="assets_wallet_icon_resource_name_5" translatable="false">R.drawable.icon_assets_item_5</string>
+
+</resources>

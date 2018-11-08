@@ -1,0 +1,137 @@
+package yooco.uchain.uchainwallet.view.adapter;
+
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.List;
+
+import yooco.uchain.uchainwallet.R;
+import yooco.uchain.uchainwallet.data.bean.WalletBean;
+import yooco.uchain.uchainwallet.global.UChainWalletApplication;
+import yooco.uchain.uchainwallet.global.Constant;
+import yooco.uchain.uchainwallet.utils.UChainLog;
+
+public class SwitchWallet2RecyclerViewAdapter extends RecyclerView
+        .Adapter<SwitchWallet2RecyclerViewAdapter.SwitchWallet2Holder> implements View
+        .OnClickListener {
+
+    private static final String TAG = SwitchWallet2RecyclerViewAdapter.class.getSimpleName();
+
+    private OnItemClickListener mOnItemClickListener;
+    private List<WalletBean> mWalletBeans;
+
+    public interface OnItemClickListener {
+        void onItemClick(int position);
+    }
+
+    public SwitchWallet2RecyclerViewAdapter(List<WalletBean> walletBeans) {
+        mWalletBeans = walletBeans;
+    }
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        mOnItemClickListener = onItemClickListener;
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (null == mOnItemClickListener) {
+            UChainLog.e(TAG, "mOnItemClickListener is null!");
+            return;
+        }
+
+        if (null == mWalletBeans || mWalletBeans.isEmpty()) {
+            UChainLog.e(TAG, "mWalletBeans is null or empty!");
+            return;
+        }
+
+        Integer position = (Integer) v.getTag();
+
+        for (int i = 0; i < mWalletBeans.size(); i++) {
+            WalletBean walletBean = mWalletBeans.get(i);
+            if (null == walletBean) {
+                UChainLog.i(TAG, "walletBean is null!");
+                continue;
+            }
+
+            if (i == position) {
+                walletBean.setSelected(true);
+            } else {
+                walletBean.setSelected(false);
+            }
+        }
+
+        notifyDataSetChanged();
+        mOnItemClickListener.onItemClick(position);
+    }
+
+    @NonNull
+    @Override
+    public SwitchWallet2Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout
+                .recyclerview_choose_wallet, parent, false);
+        SwitchWallet2Holder holder = new SwitchWallet2Holder(view);
+        view.setOnClickListener(this);
+        return holder;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull final SwitchWallet2Holder holder, int position) {
+        WalletBean walletBean = mWalletBeans.get(position);
+        if (null == walletBean) {
+            UChainLog.e(TAG, "walletBean is null!");
+            return;
+        }
+
+        int walletType = walletBean.getWalletType();
+        switch (walletType) {
+            case Constant.WALLET_TYPE_NEO:
+                holder.walletType.setImageDrawable(UChainWalletApplication.getInstance().getResources().getDrawable(R.drawable
+                        .icon_wallet_type_neo));
+                break;
+            case Constant.WALLET_TYPE_ETH:
+                holder.walletType.setImageDrawable(UChainWalletApplication.getInstance().getResources().getDrawable(R.drawable
+                        .icon_wallet_type_eth));
+                break;
+            case Constant.WALLET_TYPE_CPX:
+                break;
+            default:
+                break;
+        }
+
+        holder.walletName.setText(walletBean.getName());
+        holder.walletAddress.setText(walletBean.getAddress());
+        if (walletBean.isSelected()) {
+            holder.checkState.setVisibility(View.VISIBLE);
+        } else {
+            holder.checkState.setVisibility(View.INVISIBLE);
+        }
+
+        holder.itemView.setTag(position);
+    }
+
+    @Override
+    public int getItemCount() {
+        return null == mWalletBeans ? 0 : mWalletBeans.size();
+    }
+
+
+    class SwitchWallet2Holder extends RecyclerView.ViewHolder {
+        ImageView walletType;
+        TextView walletName;
+        TextView walletAddress;
+        ImageView checkState;
+
+        SwitchWallet2Holder(View itemView) {
+            super(itemView);
+            walletType = itemView.findViewById(R.id.iv_choose_wallet_logo);
+            walletName = itemView.findViewById(R.id.tv_choose_wallet_name);
+            walletAddress = itemView.findViewById(R.id.tv_choose_wallet_address);
+            checkState = itemView.findViewById(R.id.iv_choose_wallet_check_state);
+        }
+    }
+}

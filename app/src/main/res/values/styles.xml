@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.MyTranslucentNavigation">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomDialog" parent="AppTheme">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/BottomDialogAnim</item>
+    </style>
+
+    <style name="BottomDialogAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_anim_exit</item>
+    </style>
+
+    <style name="ExcitationCollapsedTextStyle" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/c_FFFFFF</item>
+        <item name="textAllCaps">@bool/abc_config_actionMenuItemAllCaps</item>
+        <item name="android:textSize">@dimen/d_18sp</item>
+    </style>
+
+</resources>
